@@ -99,7 +99,10 @@ myApp.config(function ($routeProvider, $locationProvider) {
       //         `,
       templateUrl: "pages/trang-chu.html",
       // xu ly logic
-      controller: ThucVatController,
+      // controller: DongVatController,
+      // ThucVatController,
+      // DongVatController,
+      controller: HomeController,
     })
     .when("/contact", {
       // lam gi thi lam
