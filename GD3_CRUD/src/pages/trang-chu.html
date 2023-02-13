@@ -1,0 +1,35 @@
+Trang chu
+
+<table>
+  <thead>
+    <tr>
+      <th>STT</th>
+      <th>ID</th>
+      <th>Ten</th>
+      <th>Loai</th>
+      <th>Gioi tinh</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="tv in listThucVat">
+      <td>{{$index+1}}</td>
+      <td>{{tv.id}}</td>
+      <td>{{tv.ten}}</td>
+      <td>{{tv.loai}}</td>
+      <td>{{tv.gioiTinh}}</td>
+      <td>
+        <a
+          href="#thuc-vat/detail/{{tv.id}}"
+          ng-click="detailThucVat($event,$index);"
+          >Detail</a
+        >
+        <a
+          href="#thuc-vat/remove/{{tv.id}}"
+          ng-click="removeThucVat($event,$index);"
+          >Remove</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>
