@@ -1,5 +1,28 @@
 Trang chu
-
+<form>
+  Ten: <input type="text" ng-model="form_thucVat.ten" />
+  <br />
+  Loai: <input type="text" ng-model="form_thucVat.loai" />
+  <br />
+  Gioi tinh:
+  <input
+    type="radio"
+    name="gender"
+    value="true"
+    ng-model="form_thucVat.gioiTinh"
+    ng-checked="form_thucVat.gioiTinh == true"
+  />Nam
+  <input
+    type="radio"
+    name="gender"
+    value="false"
+    ng-model="form_thucVat.gioiTinh"
+    ng-checked="form_thucVat.gioiTinh == false"
+  />Nu
+  <br />
+  <button ng-click="addThucVat($event);">Add</button>
+  <button ng-click="updateThucVat($event);">Update</button>
+</form>
 <table>
   <thead>
     <tr>

@@ -1,15 +1,9 @@
 {
   "thucVat": [
     {
-      "ten": "ten 10",
-      "loai": "loai 10",
-      "gioiTinh": false,
-      "id": "10"
-    },
-    {
-      "ten": "ten 11",
-      "loai": "loai 11",
-      "gioiTinh": false,
+      "ten": "ten 11 update",
+      "loai": "loai 11update",
+      "gioiTinh": "true",
       "id": "11"
     },
     {
